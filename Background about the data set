@@ -1,0 +1,64 @@
+Surface roughness estimation in cylindrical plunge grinding
+
+1 Background
+Cylindrical plunge grinding machine is used in the aerospace industry to create smooth cylindrical
+surfaces on components such as shafts and plungers. A general cylindrical grinding process has 4
+stages namely roughing, nishing, semi-nishing and spark-out.
+
+The following are the machine settings used in the dierent stages of the process
+ In-feed rate (feed rate)
+ Wheel speed (wheel speed)
+ Work speed (work speed)
+The in-process signals are collected using three dierent sensors. Two accelerometers and a power-
+cell capture the vibration signals and power drawn by the spindle motor. The signals are collected
+for every stage of the grinding process. A few statistical features are extracted from the signals which
+should be used for building the current model to estimate surface roughness after each stage. The
+following are the features in the present data-set.
+
+Using power signals:
+1. Peak power (peak power)
+2. Mean power (mean power)
+3. Standard deviation (std power)
+4. Skewness (skewness power)
+5. Kurtosis (kurtosis power)
+6. Peak to peak value (p2p power)
+
+Using accelerometer signals :
+1. Peak (peak mag an, peak mag at)
+2. Mean (mean an,mean at)
+3. Skewness (skewness an, skewness at)
+4. Kurtosis (kurtosis an, kurtosis at)
+5. Total energy (total energy an, total energy at)
+6. Energy band - 1 (energy band1 an, energy band1 at)
+ Energy band - 2 (energy band2 an, energy band2 at)
+
+2 Summary of the data-set
+The data given contains 23 predictors (3 process variables + 6 features from power signal + 14(72)
+from accelerometers) and a single response variable - Surface roughness (Ra).
+
+Data Snapshot:
+-Ra	
+-feed_rate	
+-wheel_speed	
+-work_speed	      											
+-peak_power	
+-mean_power	
+-std_power	
+-skewness_power	
+-kurtosis_power	
+-p2p_power	
+-peak_mag_an	
+-mean_an	
+-skewness_an	
+-kurtosis_an	
+-total_energy_an	
+-energy_band1_an	
+-energy_band2_an	
+-peak_mag_at	
+-mean_at	
+-skewness_at	
+-kurtosis_at	
+-total_energy_at	
+-energy_band1_at	
+-energy_band2_at
+				
